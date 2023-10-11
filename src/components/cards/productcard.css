@@ -6,11 +6,13 @@
   margin: 4%;
   width: 100%;
  
+ 
 }
 
 .card-container .image-container {
   border-radius: 16px;
   width: 100%;
+  position: relative; 
 }
 
 .card-container .image-container .image {
@@ -54,9 +56,13 @@
   text-align: center;
   background-color:rgba(109, 132, 255, 0.71);;
   position: absolute;
-  margin-top: 18%;
   color: #fff;
-  width: 15.8%;
+  bottom: 0; /* Align the bottom of the hover text to the bottom of the card */
+  left: 0;
+  right: 0;
+  padding:10px;
+  width: 100%; /* Set it to 100% if the card itself is 100% width */
+  max-width: 300px; /* Adjust this value to match the card's width */
   border-radius: 0px 0px 16px 16px ;
 }
 
