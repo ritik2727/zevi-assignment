@@ -1,0 +1,96 @@
+.search-results-section {
+  border-radius: 16px;
+  background-color: #fff /* Replace with your color */;
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
+
+.search-results-section h3 {
+  padding-left: 4%;
+  padding-top: 1%;
+  font-size: 1.8em;
+}
+
+.search-results-section div {
+  display: flex;
+  padding: 1% 2%;
+  justify-content: space-between;
+}
+
+.search-results-section div .filter-section {
+  width: 20%;
+  justify-content: center;
+  display: inline-block;
+  flex-direction: column;
+}
+
+.search-results-section div .filter-section .filter-header {
+  padding: 4% 0% 0% 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-results-section div .filter-section .filter-header img {
+  width: 5%;
+}
+
+.search-results-section div .filter-section .hide {
+  display: none;
+}
+
+.search-results-section div .filter-section .show {
+  width: 100%;
+}
+
+.search-results-section div .filter-section .show ul {
+  width: 80%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-results-section div .filter-section .show ul li {
+  display: flex;
+  width: 100%;
+  padding: 0.5%;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
+
+.search-results-section div .filter-section .show ul li input:checked {
+  background-color: black;
+}
+
+.search-results-section div .filter-section .show ul li .rating-div {
+  padding-left: 10%;
+  font-size: 1.4em;
+  color: #fdd33d;
+}
+.search-results-section div .filter-section .show ul li .rating-div-empty {
+  padding-left: 10%;
+  font-size: 1.4em;
+  color: #cdccc8;
+}
+
+.search-results-section div .filter-section .show ul li .content {
+  display: block;
+}
+
+.product-section {
+  width: 80%;
+  display: grid !important;
+  /* grid-template-columns: repeat(4, auto); */
+  /* grid-template-columns: repeat(auto-fill, minmax(250px, 5fr));
+  gap: 16px;
+  margin: 16px; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px; /* Adds a gap between grid items */
+  margin: 16px;
+
+  /* Additional styles for larger screens */
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
